@@ -29,3 +29,12 @@ for i in range(len(str2)):
     if ch==str2[i]:
         count+=1
 print("The above Character repeats",count,"Time")
+
+#To check whether given string is palindrome or not
+
+str=input("Enter the string")
+rev_str=str[ : :-1]
+if str==rev_str:
+    print("String :",rev_str, "is a palindrome")
+else:
+        print("String :",rev_str, "is not a palindrome")
