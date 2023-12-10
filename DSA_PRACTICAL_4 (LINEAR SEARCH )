@@ -1,0 +1,21 @@
+# a)Write a Python program to store roll numbers of student in array who attended training
+program in random order. Write function for searching whether particular student attended
+training program or not, using linear search and Sentinel search.
+b)Write a Python program to store roll numbers of student array who attended
+training program in sorted order. Write function for searching whether particular
+student attended training program or not, using Binary search and Fibonacci search
+
+#To search whether particulat student attended the program or not 
+
+stud_list= [12,14,27,1,34,56,43,35]
+def linear_search(list,key):
+    for i in range(len(stud_list)):
+        if stud_list[i]==key:
+            return i
+    return -1
+    
+index=linear_search(stud_list,12)
+if index==-1:
+    print("Student is not present in list")
+else:
+    print("Student is present at",index,"position in list")
