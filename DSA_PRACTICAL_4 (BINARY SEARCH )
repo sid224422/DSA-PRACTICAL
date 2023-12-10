@@ -1,0 +1,23 @@
+#Write function for searching whether particular
+student attended training program or not, using Binary search and Fibonacci search.
+
+#BINARY SEARCH 
+
+def binary_search(a,key):
+    l=0
+    h=len(a) -1
+    
+    while l<=h:
+        mid=(l+h//2)
+        
+        if a[mid]==key:
+            return mid
+        elif a[mid]<key:
+            l=mid+1
+        elif a[mid]>key:
+            h=mid-1
+            
+    return -1
+array=[12,13,34,32,55,32,123,45,32]
+print(binary_search(array,55))
+            
