@@ -9,3 +9,36 @@ student attended training program or not, using Binary search and Fibonacci sear
 
 #USING LINEAR SEARCH
 
+stud_list= [12,14,27,1,34,56,43,35]
+def linear_search(list,key):
+    for i in range(len(stud_list)):
+        if stud_list[i]==key:
+            return i
+    return -1
+    
+index=linear_search(stud_list,12)
+if index==-1:
+    print("Student is not present in list")
+else:
+    print("Student is present at",index,"position in list")
+
+#USING SENTINEL SEARCH 
+
+def Sentinel_search(l,key):
+    last=l[-1]
+    l[-1]=key
+    i=0
+    while l[-1]!=key:
+        i+=1
+        
+    if i!=len(l) - 1:
+        return i
+    if last==key:
+        return len(l) - 1
+    return -1
+    
+index=Sentinel_search(stud_list,12)
+if index==-1:
+    print("Student is not present in list")
+else:
+    print("Student is present at",index,"position in list")
