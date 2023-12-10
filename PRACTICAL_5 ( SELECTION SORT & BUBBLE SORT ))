@@ -12,8 +12,22 @@ def selection_sort(a):
             if a[min_index]>a[j]:
                 min_index=j
         a[i],a[min_index]=a[min_index],a[i]
-        
-a=[1,5,3,6,7,2,10]
+
+a=[7,5,9,4,2,10,3]
 print("This is unsorted array",a)
 selection_sort(a)
-print("This is sorted array",a)
+print("This is sorted array ",a)
+
+#BUBBLE SORT
+
+def bubble_sort(a):
+    
+    for j in range(len(a)):
+        for i in range(len(a)-1):
+            if a[i]>a[i+1]:
+                a[i],a[i+1]=a[i+1],a[i]
+            
+a=[1,5,3,6,7,2,10]
+print("This is unsorted array",a)
+bubble_sort(a)
+print("This is sorted array ",a)
