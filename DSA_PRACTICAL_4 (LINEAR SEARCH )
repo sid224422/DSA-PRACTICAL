@@ -7,6 +7,8 @@ student attended training program or not, using Binary search and Fibonacci sear
 
 #To search whether particulat student attended the program or not 
 
+#USING LINEAR SEARCH
+
 stud_list= [12,14,27,1,34,56,43,35]
 def linear_search(list,key):
     for i in range(len(stud_list)):
